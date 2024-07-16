@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/', [ProjectController::class, 'mainPage'])->name('main.page');
+Route::POST('/mail', [MailController::class, 'store'])->name('send-mail');
 
 Route::middleware([
     'auth:sanctum',
@@ -27,5 +30,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
     Route::resource('/projects', ProjectController::class);
-    Route::get('/product/all', [ProjectController::class, 'getProjectsDatatable'])->name('projects.all');
+    Route::get('/project/all', [ProjectController::class, 'getProjectsDatatable'])->name('projects.all');
+    Route::get('/emails', [MailController::class, 'index'])->name('emails.index');
+    Route::delete('/emails/{mail}', [MailController::class, 'destroy'])->name('emails.destroy');
 });

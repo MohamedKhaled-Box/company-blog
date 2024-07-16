@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Yajra\DataTables\DataTables;
+use Illuminate\Support\Str;
 
 class ProjectController extends Controller
 {
@@ -16,6 +18,7 @@ class ProjectController extends Controller
     {
         return view('projects.index');
     }
+
     public function getProjectsDatatable()
     {
         $data = Project::all();
@@ -25,7 +28,7 @@ class ProjectController extends Controller
                 return $row->title;
             })
             ->addColumn('description', function ($row) {
-                return $row->description;
+                return Str::finish(Str::limit($row->description, 100), '...'); // limit to 100 characters and add an ellipsis
             })
             ->addColumn('action', function ($row) {
 
@@ -46,7 +49,7 @@ class ProjectController extends Controller
 
                 $dropdown .= '
 
-                                <form method="POST" action="' . route('projects.destroy', $row->id) . '"
+                                <form method="POST" action="' . route('projects.destroy', $row->id) . '">
                                     ' . method_field('DELETE') . csrf_field() . '
                                     <button type="submit" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="return confirm(\'Are you sure?\')">
 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -82,7 +85,7 @@ class ProjectController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'picture' => 'nullable|picture|mimes:jpeg,png,jpg,gif,svg',
+            'picture' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
         $user = Auth::user();
         $project = new Project;
@@ -107,7 +110,7 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        //
+        return view('projects.show', compact('project'));
     }
 
     /**
@@ -115,7 +118,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        //
+        return view('projects.edit', compact('project'));
     }
 
     /**
@@ -123,7 +126,24 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'picture' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
+        ]);
+        $project->title = $request->title;
+        $project->description = $request->description;
+
+        if ($request->hasFile('picture')) {
+            $picture = $request->file('picture');
+            $name = time() . '.' . $picture->getClientOriginalExtension();
+            $destinationPath = public_path('/pictures');
+            $picture->move($destinationPath, $name);
+            $project->picture = $name;
+        }
+        $project->save();
+
+        return redirect()->route('projects.index');
     }
 
     /**
@@ -131,6 +151,12 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        $project->delete();
+        return redirect()->back();
+    }
+    public function mainPage()
+    {
+        $projects = Project::orderBy('id', 'desc')->paginate(4);
+        return view('projects.main-page', compact('projects'));
     }
 }
