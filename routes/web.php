@@ -33,4 +33,6 @@ Route::middleware([
     Route::get('/project/all', [ProjectController::class, 'getProjectsDatatable'])->name('projects.all');
     Route::get('/emails', [MailController::class, 'index'])->name('emails.index');
     Route::delete('/emails/{mail}', [MailController::class, 'destroy'])->name('emails.destroy');
+    Route::get('/emails/create', [MailController::class, 'mailDraft'])->name('emails.draft');
+    Route::post('/send-mail', [MailController::class, 'sendMail'])->name('send.mail');
 });

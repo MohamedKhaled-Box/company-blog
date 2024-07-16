@@ -33,7 +33,7 @@
         </div>
     </div>
     @section('scripts')
-        <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
             crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
@@ -42,6 +42,7 @@
             $(function() {
                 var table = $('#projects_table').DataTable({
                     processing: true,
+                    scrollX: true,
                     pagingType: 'simple_numbers',
                     serverSide: true,
                     ajax: "{{ Route('projects.all') }}",

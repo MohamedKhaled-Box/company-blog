@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendEmailsJob;
 use App\Models\Mail;
 use Illuminate\Http\Request;
 
@@ -37,5 +38,30 @@ class MailController extends Controller
     {
         $mail->delete();
         return redirect()->back();
+    }
+
+    public function mailDraft()
+    {
+        return view('subscriptions.create');
+    }
+    public function sendMail(Request $request)
+    {
+        $request->validate([
+            'subject' => 'required|string|max:255',
+            'body' => 'required|string',
+        ]);
+
+        $subject = $request->subject;
+        $body = $request->body;
+
+        $totalSubscribers = Mail::count();
+        $batchSize = 25;
+        $totalJobs = ceil($totalSubscribers / $batchSize);
+
+        for ($i = 0; $i < $totalJobs; $i++) {
+            SendEmailsJob::dispatch($subject, $body, $i * $batchSize);
+        }
+
+        return back()->with('success', 'Mail sent and job dispatched!');
     }
 }
