@@ -1,0 +1,98 @@
+{
+    "Subscribe": "اشترك",
+    "Showing": "عرض",
+    "to": "إلى",
+    "of": "من أصل",
+    "results": "نتيجة",
+
+    "Projects": "المشاريع",
+    "Emails": "البريد الإلكتروني",
+    "Manage Team": "إدارة الفريق",
+    "Team Settings": "إعدادات الفريق",
+    "Create New Team": "إنشاء فريق جديد",
+    "Switch Teams": "تبديل الفرق",
+    "Manage Account": "إدارة الحساب",
+    "Profile": "الملف الشخصي",
+    "API Tokens": "رموز API",
+    "Log Out": "تسجيل الخروج",
+
+    "Send E-mail": "إرسال البريد الإلكتروني",
+    "Created at": "تاريخ الإنشاء",
+    "Delete": "حذف",
+
+    "Subject": "الموضوع",
+    "body": "نص البريد",
+
+    "Title": "العنوان",
+    "Description": "الوصف",
+    "Actions": "الإجراءات",
+
+    "Creating Project": "إنشاء مشروع",
+    "Upload file": "رفع ملف",
+    "Write your description here...": "اكتب الوصف هنا...",
+
+    "Profile Information": "معلومات الملف الشخصي",
+    "Update your account's profile information and email address.": "قم بتحديث معلومات ملفك الشخصي وعنوان بريدك الإلكتروني.",
+    "Photo": "الصورة",
+    "Select A New Photo": "حدد صورة جديدة",
+    "Remove Photo": "إزالة الصورة",
+    "Name": "الاسم",
+    "Email": "البريد الإلكتروني",
+    "Your email address is unverified.": "عنوان بريدك الإلكتروني غير مفعل.",
+    "Click here to re-send the verification email.": "انقر هنا لإعادة إرسال رسالة التحقق إلى بريدك الإلكتروني.",
+    "A new verification link has been sent to your email address.": "تم إرسال رابط التحقق الجديد إلى عنوان بريدك الإلكتروني.",
+    "Saved.": "تم الحفظ",
+    "Save": "حفظ",
+
+    "Update Password": "تحديث كلمة المرور",
+    "Ensure your account is using a long, random password to stay secure.": "تأكد من استخدام كلمة مرور طويلة وعشوائية لحسابك للحفاظ على الأمان.",
+    "Current Password": "كلمة المرور الحالية",
+    "New Password": "كلمة المرور الجديدة",
+    "Confirm Password": "تأكيد كلمة المرور",
+
+    "Two Factor Authentication": "المصادقة الثنائية العاملة",
+    "Add additional security to your account using two factor authentication.": "أضف أمانًا إضافيًا لحسابك باستخدام المصادقة الثنائية العاملة.",
+    "Finish enabling two factor authentication.": "انهاء تمكين المصادقة الثنائية العاملة.",
+    "You have enabled two factor authentication.": "لقد قمت بتمكين المصادقة الثنائية العاملة.",
+    "You have not enabled two factor authentication.": "لم تقم بتمكين المصادقة الثنائية العاملة.",
+    "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.": "عند تمكين المصادقة الثنائية العاملة، سيُطلب منك استخدام رمز آمن وعشوائي أثناء عملية المصادقة. يمكنك الحصول على هذا الرمز من تطبيق Google Authenticator على هاتفك.",
+    "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.": "لإكمال تمكين المصادقة الثنائية العاملة، قم بمسح رمز الاستجابة السريعة QR التالي باستخدام تطبيق المصادقة على هاتفك أو أدخل مفتاح الإعداد وقدم رمز OTP المولد.",
+    "Two factor authentication is now enabled. Scan the following QR code using your phone's authenticator application or enter the setup key.": "تم تمكين المصادقة الثنائية العاملة الآن. قم بمسح رمز الاستجابة السريعة QR التالي باستخدام تطبيق المصادقة على هاتفك أو أدخل مفتاح الإعداد.",
+    "Setup Key": "مفتاح الإعداد",
+    "Code": "الرمز",
+    "Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost.": "قم بتخزين رموز الاسترداد هذه في مدير كلمات المرور الآمن. يمكن استخدامها لاستعادة الوصول إلى حسابك إذا فقدت جهاز المصادقة الثنائية العاملة.",
+    "Enable": "تمكين",
+    "Regenerate Recovery Codes": "إعادة إنشاء رموز الاسترداد",
+    "Confirm": "تأكيد",
+    "Show Recovery Codes": "عرض رموز الاسترداد",
+    "Cancel": "إلغاء",
+    "Disable": "تعطيل",
+
+    "Browser Sessions": "جلسات المتصفح",
+    "Manage and log out your active sessions on other browsers and devices.": "إدارة وتسجيل الخروج من الجلسات النشطة على المتصفحات الأخرى والأجهزة.",
+    "If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.": "إذا لزم الأمر، يمكنك تسجيل الخروج من جميع جلسات المتصفح الأخرى عبر جميع أجهزتك. تم إدراج بعض الجلسات الأخيرة أدناه؛ ومع ذلك، قد لا تكون هذه القائمة شاملة. إذا شعرت أن حسابك قد تعرض للاختراق، يجب أيضًا تحديث كلمة المرور الخاصة بك.",
+    "This device": "هذا الجهاز",
+    "Last active": "آخر نشاط",
+    "Log Out Other Browser Sessions": "تسجيل الخروج من جلسات المتصفح الأخرى",
+    "Done.": "تم.",
+    "Please enter your password to confirm you would like to log out of your other browser sessions across all of your devices.": "الرجاء إدخال كلمة المرور الخاصة بك لتأكيد رغبتك في تسجيل الخروج من جلسات المتصفح الأخرى عبر جميع أجهزتك.",
+    "Password": "كلمة المرور",
+
+    "Delete Account": "حذف الحساب",
+    "Permanently delete your account.": "حذف حسابك نهائيًا.",
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "بمجرد حذف حسابك، سيتم حذف جميع الموارد والبيانات الخاصة به نهائيًا. قبل حذف حسابك، يرجى تنزيل أي بيانات أو معلومات ترغب في الاحتفاظ بها.",
+    "Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "هل أنت متأكد أنك تريد حذف حسابك؟ بمجرد حذف حسابك، سيتم حذف جميع الموارد والبيانات الخاصة به نهائيًا. الرجاء إدخال كلمة المرور الخاصة بك لتأكيد رغبتك في حذف حسابك نهائيًا.",
+
+
+
+
+
+
+
+    "Create": "إنشاء",
+    "Submit": "حفظ",
+    "Edit": "تعديل",
+
+    "All Rights Reserved.": "كل الحقوق محفوظة.",
+    "Subscribe to our maile service :": "اشترك في خدمة البريد لدينا :"
+}

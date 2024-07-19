@@ -11,7 +11,7 @@
             <div class="mb-6">
                 <a href="{{ route('projects.create') }}"> <button
                         class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150">
-                        create</button></a>
+                        {{ __('Create') }}</button></a>
             </div>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="box-body">
@@ -33,7 +33,7 @@
         </div>
     </div>
     @section('scripts')
-        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+        <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
             crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
@@ -44,6 +44,26 @@
                     processing: true,
                     scrollX: true,
                     pagingType: 'simple_numbers',
+                    @if (App::getLocale() == 'ar')
+                        "language": {
+                            "sProcessing": "جارٍ التحميل...",
+                            "sLengthMenu": "أظهر _MENU_ مدخلات",
+                            "sZeroRecords": "لم يعثر على أية سجلات",
+                            "sInfo": "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+                            "sInfoEmpty": "يعرض 0 إلى 0 من أصل 0 سجل",
+                            "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                            "sInfoPostFix": "",
+                            "sSearch": "ابحث:",
+                            "sUrl": "",
+                            "oPaginate": {
+                                "sFirst": "الأول",
+                                "sPrevious": "السابق",
+                                "sNext": "التالي",
+                                "sLast": "الأخير"
+                            }
+                        },
+                    @endif
+
                     serverSide: true,
                     ajax: "{{ Route('projects.all') }}",
                     columns: [{

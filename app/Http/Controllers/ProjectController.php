@@ -28,7 +28,7 @@ class ProjectController extends Controller
                 return $row->title;
             })
             ->addColumn('description', function ($row) {
-                return Str::finish(Str::limit($row->description, 100), '...'); // limit to 100 characters and add an ellipsis
+                return Str::finish(Str::limit($row->description, 65), '...'); // limit to 65 characters and add an ellipsis
             })
             ->addColumn('action', function ($row) {
 

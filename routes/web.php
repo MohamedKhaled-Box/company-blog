@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('switch-language/{lang}', function ($lang) {
+    session(['lang' => $lang]);
+    return redirect()->back();
+})->name('switch.language');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,9 +31,9 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    // Route::get('/dashboard', function () {
+    //     return view('dashboard');
+    // })->name('dashboard');
     Route::resource('/projects', ProjectController::class);
     Route::get('/project/all', [ProjectController::class, 'getProjectsDatatable'])->name('projects.all');
     Route::get('/emails', [MailController::class, 'index'])->name('emails.index');
