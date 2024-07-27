@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
@@ -20,10 +21,13 @@ Route::get('switch-language/{lang}', function ($lang) {
     return redirect()->back();
 })->name('switch.language');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', [ProjectController::class, 'mainPage'])->name('main.page');
+
+Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/pros', [HomeController::class, 'project'])->name('pro');
+Route::get('/pro/{id}', [HomeController::class, 'projectsShow'])->name('pro.show');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/contactus', [HomeController::class, 'contactus'])->name('contactus');
+
 Route::POST('/mail', [MailController::class, 'store'])->name('send-mail');
 
 Route::middleware([
@@ -31,9 +35,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    // Route::get('/dashboard', function () {
-    //     return view('dashboard');
-    // })->name('dashboard');
     Route::resource('/projects', ProjectController::class);
     Route::get('/project/all', [ProjectController::class, 'getProjectsDatatable'])->name('projects.all');
     Route::get('/emails', [MailController::class, 'index'])->name('emails.index');

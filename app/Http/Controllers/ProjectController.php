@@ -154,9 +154,4 @@ class ProjectController extends Controller
         $project->delete();
         return redirect()->back();
     }
-    public function mainPage()
-    {
-        $projects = Project::orderBy('id', 'desc')->paginate(4);
-        return view('projects.main-page', compact('projects'));
-    }
 }

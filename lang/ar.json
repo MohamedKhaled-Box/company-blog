@@ -83,16 +83,47 @@
     "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "بمجرد حذف حسابك، سيتم حذف جميع الموارد والبيانات الخاصة به نهائيًا. قبل حذف حسابك، يرجى تنزيل أي بيانات أو معلومات ترغب في الاحتفاظ بها.",
     "Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "هل أنت متأكد أنك تريد حذف حسابك؟ بمجرد حذف حسابك، سيتم حذف جميع الموارد والبيانات الخاصة به نهائيًا. الرجاء إدخال كلمة المرور الخاصة بك لتأكيد رغبتك في حذف حسابك نهائيًا.",
 
-
-
-
-
-
-
     "Create": "إنشاء",
     "Submit": "حفظ",
     "Edit": "تعديل",
+    "LogIn": "تسجيل الدخول",
+
+    "Home": "الرئيسيه",
+    "projects": "مشاريع",
+    "Stay in touch": "تابعنا",
 
     "All Rights Reserved.": "كل الحقوق محفوظة.",
-    "Subscribe to our maile service :": "اشترك في خدمة البريد لدينا :"
+    "Subscribe to our maile service :": "اشترك في خدمة البريد لدينا :",
+
+
+        "Subscribe to our mail service :": "اشترك في خدمة البريد لدينا :",
+        "Welcome to": "مرحبا بكم في",
+        "MKM's Company is a leading provider of innovative solutions in web sites. Our team of experts is dedicated to delivering exceptional results for our clients, with a focus on quality, efficiency, and customer satisfaction. Whether you're looking for a website, or a system, we have the expertise and experience to meet your needs.": "شركتنا مزود رائد للحلول المبتكرة في مواقع الويب. فريقنا من الخبراء مكرس لتقديم نتائج استثنائية لعملائنا، مع التركيز على الجودة والكفاءة ورضا العملاء. سواء كنت تبحث عن موقع ويب أو نظام، لدينا الخبرة والخبرة لتلبية احتياجاتك.",
+        "Our Mission": "مهمتنا",
+        "At MKM's Company, our mission is to provide cutting-edge solutions that empower our clients to achieve their goals. We are committed to innovation, excellence, and building lasting relationships with our customers. Our goal is to be a trusted partner in your success, offering comprehensive services that drive growth and efficiency.": "في شركتنا مهمتنا هي توفير حلول متطورة تمكّن عملاءنا من تحقيق أهدافهم. نحن ملتزمون بالابتكار والتميز وبناء علاقات دائمة مع عملائنا. هدفنا هو أن نكون شريكًا موثوقًا في نجاحكم، وتقديم خدمات شاملة تدفع النمو والكفاءة.",
+        "Our Values": "قيمنا",
+        "We uphold the highest standards of integrity in all of our actions.": "نحن نحافظ على أعلى معايير النزاهة في جميع أفعالنا.",
+        "Innovation": "الابتكار",
+        "We pursue new creative ideas that have the potential to change the world.": "نسعى وراء أفكار إبداعية جديدة لديها القدرة على تغيير العالم.",
+        "Excellence": "التميز",
+        "We strive for excellence in everything we do, ensuring our clients receive the best possible service.": "نحن نسعى للتميز في كل ما نقوم به، لضمان حصول عملائنا على أفضل خدمة ممكنة.",
+        "Company": "شركه",
+        "Aenean ligula enim, tempor vel elementum tincidunt, luctus ac lorem. Praesent quis pellentesque quam. Donec dapibus sapien interdum sapien posuere, sed interdum libero feugiat. Curabitur dolor nisi, mollis a mi luctus, euismod commodo nisi. In et aliquam arcu. Nunc sit amet mattis lorem. Maecenas pretium mauris sapien, eu lacinia enim.":"نالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص",
+        "MKM's Company": "MKM شركه",
+
+            "About": "نبذة عن",
+            "MKM's Company has been a trusted name in web services since 2024. We specialize in providing top-notch websites, tailored to meet the unique needs of our clients. Our commitment to excellence and innovation has made us a leader in the industry.": " شركتنا اسمًا موثوقًا في خدمات الويب منذ عام 2024. نحن متخصصون في توفير مواقع ويب عالية الجودة، مصممة لتلبية احتياجات عملائنا الفريدة. التزامنا بالتميز والابتكار جعلنا قائدين في الصناعة.",
+            "Founded in 2024, MKM's Company started with a small team of passionate professionals dedicated to Coding Dreams into Reality. we continue to push the boundaries of what's possible in web services.": "تأسست شركتنا في عام 2024 بفريق صغير من المهنيين المتحمسين المكرسين لتحويل الأحلام إلى حقيقة. نحن نستمر في دفع حدود الممكن في خدمات الويب.",
+            "Our mission is to deliver exceptional solutions that empower our clients to succeed. We strive to innovate and excel in every aspect of our work, ensuring that our customers receive the highest quality of service  and support. At MKM's Company, we believe in building long-lasting relationships based on trust and transparency.":"مهمتنا هي تقديم حلول استثنائية تمكن عملائنا من تحقيق النجاح. نحن نسعى جاهدين للابتكار والتميز في كل جانب من جوانب عملنا، مما يضمن حصول عملائنا على أعلى مستويات الجودة من الخدمة والدعم. في شركتنا ، نحن نؤمن ببناء علاقات طويلة الأمد مبنية على الثقة والشفافية.",
+            "Our Story": "قصتنا",
+            "Meet the Team": "تعرف على الفريق",
+
+                "Stay Updated With Our News": "ابقَ على اطلاع بأخبارنا",
+                "Subscribe to our newsletter and never miss an update! Get the latest news, insights, and exclusive offers delivered straight to your inbox.": "اشترك في نشرتنا الإخبارية ولا تفوت أي تحديث! احصل على آخر الأخبار والرؤى والعروض الحصرية مباشرة إلى صندوق بريدك.",
+                "Read more about our us": "اقرأ المزيد عنّا",
+                "Subscribe to Our Newsletter": "اشترك في نشرتنا الإخبارية"
+
+
+
+
 }
