@@ -11,6 +11,10 @@ use Illuminate\Support\Str;
 
 class ProjectController extends Controller
 {
+    function __construct()
+    {
+        $this->middleware('permission:Admin');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -152,6 +156,6 @@ class ProjectController extends Controller
     public function destroy(Project $project)
     {
         $project->delete();
-        return redirect()->back();
+        return redirect()->route('projects.index');
     }
 }

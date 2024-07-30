@@ -16,7 +16,7 @@ class ProjectSeeder extends Seeder
     {
         $faker = app(Faker::class);
 
-        for ($i = 0; $i < 30; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             Project::create([
                 'user_id' => 1,
                 'title' => $faker->catchPhrase,

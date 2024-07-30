@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class MailController extends Controller
 {
+    function __construct()
+    {
+        $this->middleware('permission:Admin');
+    }
     /**
      * Display a listing of the resource.
      */

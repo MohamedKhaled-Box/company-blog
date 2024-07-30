@@ -5,6 +5,13 @@
     "of": "من أصل",
     "results": "نتيجة",
 
+    "Already registered?": "هل لديك حساب بالفعل؟",
+    "Register": "تسجيل",
+    "Forgot your password?": "هل نسيت كلمة المرور؟",
+    "Log in": "تسجيل الدخول",
+    "Remember me": "تذكرني",
+    "Integrity": "النزاهة",
+
     "Projects": "المشاريع",
     "Emails": "البريد الإلكتروني",
     "Manage Team": "إدارة الفريق",
@@ -49,6 +56,11 @@
     "Current Password": "كلمة المرور الحالية",
     "New Password": "كلمة المرور الجديدة",
     "Confirm Password": "تأكيد كلمة المرور",
+    "Are you sure?": " هل أنت متأكد؟ ",
+    "Are you sure you want to delete this comment?": "هل أنت متأكد أنك تريد حذف التعليق هذا؟'",
+    "Please Signin To comment on the video": "يرجى تسجيل الدخول للتعليق على المشروع",
+    "Please Signin to be able to like the video": "يرجى تسجيل الدخول للأعجاب بالمشروع",
+    "Please write a comment": "يرجى كتابة تعليق",
 
     "Two Factor Authentication": "المصادقة الثنائية العاملة",
     "Add additional security to your account using two factor authentication.": "أضف أمانًا إضافيًا لحسابك باستخدام المصادقة الثنائية العاملة.",
@@ -87,6 +99,15 @@
     "Submit": "حفظ",
     "Edit": "تعديل",
     "LogIn": "تسجيل الدخول",
+    "register": "اشتراك",
+    "Comment": "أكتب تعليق",
+    "Admin Dashboard": "لوحة التحكم",
+    "Users Management": " إدارة المستخدمين",
+    "Users": "المستخدمين",
+    "Create User": "إنشاء مستخدم",
+    "Role": "صلاحيات",
+    "Action": "أفعال",
+    "Edit User": "عدل المستخدم",
 
     "Home": "الرئيسيه",
     "projects": "مشاريع",
@@ -120,8 +141,9 @@
 
                 "Stay Updated With Our News": "ابقَ على اطلاع بأخبارنا",
                 "Subscribe to our newsletter and never miss an update! Get the latest news, insights, and exclusive offers delivered straight to your inbox.": "اشترك في نشرتنا الإخبارية ولا تفوت أي تحديث! احصل على آخر الأخبار والرؤى والعروض الحصرية مباشرة إلى صندوق بريدك.",
-                "Read more about our us": "اقرأ المزيد عنّا",
-                "Subscribe to Our Newsletter": "اشترك في نشرتنا الإخبارية"
+                "Read more about our company": "اقرأ المزيد عنّا",
+                "Subscribe to Our Newsletter": "اشترك في نشرتنا الإخبارية",
+                "SignUp or Login to be able to like or comment on the project": "اشترك او سجل الدخول لتتمكن من الاعجاب او التعليق"
 
 
 
