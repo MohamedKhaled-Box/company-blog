@@ -10,7 +10,7 @@ class MailController extends Controller
 {
     function __construct()
     {
-        $this->middleware('permission:Admin');
+        $this->middleware('permission:Admin')->except('store');
     }
     /**
      * Display a listing of the resource.
